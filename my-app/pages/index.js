@@ -1,4 +1,5 @@
 import Head from 'next/head';
+// import Image from 'next/image'
 import styles from '../styles/Home.module.css';
 import { useEffect, useRef, useState } from "react";
 import Web3Modal from "web3modal";
@@ -152,12 +153,12 @@ export default function Home() {
       <div className={styles.main}>
         <div>
           <h1 className={styles.title}> Welcome to be the part of DAO! </h1>
-          <div className={styles.description}> It's NFT collection. </div>
+          <div className={styles.description}> It&apos;s NFT collection. </div>
           <div className={styles.description}> {numOfWhitelisted} have already joined. </div>
           {renderButton()}
         </div>
-        <div>
-          <img className={styles.image} src="./crypto-devs.svg" />
+        <div className={styles.image}>
+          <img  src="./crypto-devs.svg" />
         </div>
       </div>
 
